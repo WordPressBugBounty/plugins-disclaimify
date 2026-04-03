@@ -1,0 +1,75 @@
+/* Css for blocksy theme support */
+.meta-disclaimify {
+	position: relative;
+}
+.meta-disclaimify span {
+	margin: 0;
+}
+.meta-disclaimify:hover .disclaimify-popover {
+	visibility: visible !important;
+
+	opacity: 1 !important;
+}
+.disclaimify-popover {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+
+	position: absolute;
+	top: 100%;
+	left: 50%;
+
+	visibility: hidden;
+
+	width: max-content;
+	max-width: 350px;
+	margin-top: 15px;
+	padding: 15px;
+
+	transition: all 0.3s ease 0s;
+	transform: translateX(-50%);
+	text-transform: none;
+
+	opacity: 0;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+	background-color: #FFFFFFFF;
+	box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+.disclaimify-popover::before {
+	position: absolute;
+	top: -16px;
+	left: -1px;
+
+	width: calc(100% + 2px);
+	height: 15px;
+
+	content: '';
+
+	background-color: transparent;
+}
+.disclaimify-popover::after {
+	position: absolute;
+	top: -8px;
+	left: 50%;
+
+	width: 16px;
+	height: 16px;
+
+	content: '';
+	transform: rotate(-45deg) translateX(-50%) translateY(-50%);
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: #E0E0E0 #E0E0E0 transparent transparent;
+	background-color: #FFFFFFFF;
+}
+.disclaimify-popover p {
+	margin-bottom: 10;
+}
+.disclaimify-popover p:last-child {
+	margin-bottom: 0;
+}
+.disclaimify-popover a {
+	text-decoration: underline;
+}

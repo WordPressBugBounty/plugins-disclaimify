@@ -1,0 +1,181 @@
+#disclaimify_settings .inside {
+	padding: 20px;
+
+	border-top: 1px solid #E0E0E0;
+}
+
+/* Fields Section */
+.disclaimify_meta-fields-section {
+	box-sizing: border-box;
+}
+.disclaimify_meta-fields-section:not(:first-child) {
+	margin-top: 30px;
+}
+.disclaimify_meta-fields-section *,
+.disclaimify_meta-fields-section *::before,
+.disclaimify_meta-fields-section *::after {
+	box-sizing: border-box;
+}
+.disclaimify_meta-fields-section-title {
+	font-size: 18px;
+
+	margin-top: 0;
+}
+/* Fields Wrapper */
+.disclaimify_meta-fields {
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 100%;
+
+	gap: 20px;
+}
+.disclaimify_meta-fields:not(:first-child) {
+	margin-top: 15px;
+}
+.disclaimify_meta-fields.disclaimify_meta-fields-dep-options {
+	margin-top: 0;
+
+	gap: 0;
+}
+.disclaimify_meta-fields-dep-options .disclaimify_meta-field {
+	padding-top: 15px;
+}
+
+/* Meta Field */
+.disclaimify_meta-field {
+	position: relative;
+}
+.disclaimify_meta-field .disclaimify_meta-field_label {
+	font-size: 14px;
+	line-height: 1.4;
+
+	position: relative;
+
+	display: block;
+
+	margin-bottom: calc(8px);
+	padding: 0;
+
+	user-select: none;
+
+	color: #1E1E1E;
+}
+.disclaimify_meta-field .disclaimify_meta-field_input {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.disclaimify_meta-field_text {
+	width: 100%;
+}
+
+/* Checkbox Field */
+.disclaimify_meta-field_checkbox {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 5px;
+}
+.disclaimify_meta-field_checkbox .disclaimify_meta-field_label {
+	align-self: center;
+
+	margin: 0;
+}
+.disclaimify_meta-field_checkbox .disclaimify_meta-field_input {
+	position: relative;
+
+	display: block;
+
+	width: 18px;
+	height: 18px;
+	margin: 0;
+
+	transition: all 0.3s ease 0s;
+
+	border: 1px solid #949494;
+	border-radius: 2px;
+}
+.disclaimify_meta-field_checkbox .disclaimify_meta-field_input:checked {
+	border-color: #1E1E1E;
+	background-color: #1E1E1E;
+}
+.disclaimify_meta-field_checkbox .disclaimify_meta-field_input:checked:before {
+	width: 12px;
+	height: 12px;
+	margin-top: 2px;
+	margin-left: 2px;
+
+	content: '';
+
+	background-color: #FFFFFF;
+
+	clip-path: polygon(9% 40%, 41% 76%, 84% 2%, 96% 9%, 42% 99%, 0% 50%);
+}
+
+/* Radio Field */
+.disclaimify_meta-field_radio {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 5px;
+}
+.disclaimify_meta-field_radio .disclaimify_meta-field_label {
+	align-self: center;
+
+	margin: 0;
+}
+.disclaimify_meta-field_radio .disclaimify_meta-field_input {
+	position: relative;
+
+	display: block;
+
+	width: 18px;
+	height: 18px;
+	margin: 0;
+
+	transition: all 0.3s ease 0s;
+
+	border: 1px solid #949494;
+}
+.disclaimify_meta-field_radio .disclaimify_meta-field_input:checked {
+	border-color: #1E1E1E;
+}
+.disclaimify_meta-field_radio .disclaimify_meta-field_input:checked:before {
+	width: 10px;
+	height: 10px;
+
+	background-color: #1E1E1E;
+}
+
+/* Text Field */
+.disclaimify_meta-field_text,
+.disclaimify_meta-field_number {
+	display: flex;
+	flex-direction: column;
+}
+.disclaimify_meta-field_text .disclaimify_meta-field_input,
+.disclaimify_meta-field_number .disclaimify_meta-field_input {
+	font-size: 13px;
+	line-height: normal;
+
+	width: 100%;
+	max-width: 500px;
+	min-height: 30px;
+	padding: 6px 8px;
+
+	transition: all 0.3s ease 0s;
+
+	color: #2C3338;
+	border: 1px solid #949494;
+	border-radius: 2px;
+	outline: none;
+	background-color: #FFFFFF;
+	box-shadow: none;
+}
+.disclaimify_meta-field_number .disclaimify_meta-field_input {
+	max-width: 120px;
+}
+.disclaimify_meta-field_number .disclaimify_meta-field_input:focus {
+	outline: none;
+	box-shadow: none;
+}
